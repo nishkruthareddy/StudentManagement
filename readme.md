@@ -1,1 +1,1 @@
-Project: Student search System
+Project: Student Management System - registraion and search
