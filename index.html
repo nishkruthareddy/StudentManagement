@@ -1,21 +1,25 @@
 
+
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Student Management</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body>
-    <h2>Student Management System</h2>
+<h2>Student Registration</h2>
 
-    <input id="name" placeholder="Student Name">
-    <input id="roll" placeholder="Roll Number">
-    <input id="course" placeholder="Course">
+<input id="name" placeholder="Student Name">
+<input id="roll" placeholder="Roll Number">
+<button onclick="register()">Register</button>
+<p id="msg"></p>
 
-    <button onclick="addStudent()">Add Student</button>
+<script>
+function register() {
+  let n = document.getElementById("name").value;
+  let r = document.getElementById("roll").value;
 
-    <ul id="list"></ul>
-
-    <script src="script.js"></script>
+  if (n == "" || r == "")
+    msg.innerHTML = "Fill all fields";
+  else
+    msg.innerHTML = "Registered: " + n + " " + r;
+}
+</script>
 </body>
 </html>
