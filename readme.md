@@ -1,1 +1,1 @@
-Project: Student Management Systemgi
+Project: Student search System
